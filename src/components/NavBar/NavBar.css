@@ -1,0 +1,21 @@
+.Navigation {
+	display: flex;
+	background: #355cb7;
+	min-height: 10vh;
+	width: 100%;
+  }
+  
+  ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	text-decoration: none;
+	list-style: none;
+  }
+
+a {
+    color: #fbfbfb;
+	text-decoration: none;
+  }
+
