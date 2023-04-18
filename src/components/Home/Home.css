@@ -1,0 +1,18 @@
+.ItemListContainer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(48, 42, 99);
+	width: 100%;
+	min-height: 30vh;
+	border: 5px solid yellow;
+}
+.ItemListContainer img{
+	margin-bottom: 5px;
+}
+
+.ItemListContainer h1,
+h2 {
+	color: white;
+}
