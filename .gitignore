@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/components/ItemDesctiption/MainImage.js
+src/components/ItemDesctiption/Info.js
+src/components/ItemDesctiption/ImageGrid.js
