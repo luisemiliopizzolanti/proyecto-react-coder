@@ -16,12 +16,9 @@ const NavBar = () => {
                 <Link to="/shop">            
                     Tienda 
                 </Link> 
-                <li>
-                    <a href="/" > Contacto </a> 
-                </li> 
-                <li>
-                    <CartWidget count={4}/>
-                </li> 
+                <Link to="/CartList">            
+                    <CartWidget/>
+                </Link> 
             </ul> 
         </nav>
     );
