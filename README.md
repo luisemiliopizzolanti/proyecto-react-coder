@@ -12,7 +12,7 @@ npm start
 
 Luego ir a localhost:3000
 
-##Demo de la APP
+## Demo de la APP
 
 https://proyecto-react-coder.vercel.app/
 
