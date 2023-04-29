@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import Shop from "./views/Shop";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css"
 import imagenes from "./imgenes"
 import ItemDescription from "./components/ItemDesctiption/ItemDescription";
 import CartList from "./components/CartList/CartList";
 import { ItemsInCartProvider } from "./context/CartContext";
-import UserDataForm from "./components/UserDataForm/UserDataForm"
 
 
 class App extends Component {
@@ -17,10 +16,10 @@ class App extends Component {
             <ItemsInCartProvider>
                 
                 <Router>
-                    <NavBar />
+                    <NavBar title="Retro Consolas" />
                     <Routes>
-                        <Route index path="/" element={<Home title="Bienvenido Usuario al mundo Retro Hardware!" img={imagenes["pic1"]}/>} />
-                        <Route path="/shop" element={<ItemListContainer/>} />
+                        <Route index path="/" element={<Home title="Bienvenido al mundo de Retro Consolas!" img={imagenes["pic1"]}/>} />
+                        <Route path="/shop/:category" element={<Shop/>} />
                         <Route path="/itemDescription/:id" element={<ItemDescription/>} />
                         <Route path="/CartList" element={<CartList/>} />
                     </Routes>

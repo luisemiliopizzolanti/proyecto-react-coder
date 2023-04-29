@@ -7,7 +7,7 @@ import { collection,addDoc} from "firebase/firestore";
 import { db } from "../../firebase/FireBase";
 
 const CartList = () => {
-  const {itemsInCart} = useContext(CartContext)
+  const {itemsInCart,removeCart} = useContext(CartContext)
   
   const [nombre, setNombreUsuario] = useState('');
   const [apellido, setApellidoUsuario] = useState('');
@@ -25,16 +25,17 @@ const CartList = () => {
     let cartData = [...itemsInCart];
     let userData = {nombre,apellido,telefono,direccion,email}
    cartData.push(userData)
-    //console.log(cartData)
     const send = async () => {
       // Add a new document with a generated id.
       const docRef = await addDoc(collection(db, "purchases"), {
         cartData,
       });
-      // console.log("Document written with ID: ", docRef.id);
       setPurchaseID(docRef.id)
   }
   send();
+  removeCart();
+  
+
 }
   return (
     <>
