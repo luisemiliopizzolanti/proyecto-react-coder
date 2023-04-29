@@ -6,7 +6,7 @@ Este proyecto es un ECOMMERCE, basado en react sobre consolas retro
 
 git clone https://github.com/luisemiliopizzolanti/proyecto-react-coder.git
 
-npm i
+npm install
 
 npm start
 
