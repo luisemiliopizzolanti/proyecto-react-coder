@@ -4,7 +4,7 @@ Este proyecto es un ECOMMERCE, basado en react sobre consolas retro
 
 ## Pasos para instalar
 
-git clone https://github.com/luisemiliopizzolanti/proyecto-react-coder
+git clone https://github.com/luisemiliopizzolanti/proyecto-react-coder.git
 
 npm i
 
